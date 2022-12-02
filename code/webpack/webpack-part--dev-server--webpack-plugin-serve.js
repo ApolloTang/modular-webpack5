@@ -12,9 +12,12 @@ const devServer = (
        {
          port: process.env.PORT || _port,
          static: './dist',
-         liveReload: true,
+         hmr: true,
+         // liveReload: true,  // this will overide hmr
+
          waitForBuild: true,
-         host: _host // you have set host if you use Safary
+         host: _host,  // you have set host if you use Safary
+         log : { level: 'info' }
        }
      )
    ]
