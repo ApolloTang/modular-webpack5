@@ -35,6 +35,9 @@ const commonConfig = merge([
       //  '.mjs': ['.mjs', '.mts']
       // }
     },
+    optimization: {
+      runtimeChunk: 'single',
+    }
   },
   part_page({title:'demo'}),
   part_extractCss({
