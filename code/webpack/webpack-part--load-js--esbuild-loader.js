@@ -3,12 +3,12 @@ const loadJs_esbuildLoader = () => {
   const module = {
     rules: [
       {
-        test: /\.m?(t|j)s$/,
+        test: /\.m?(t|j)sx?$/,
         use: [
           {
             loader: 'esbuild-loader',
             options: {
-              loader: 'ts',
+              loader: 'tsx',
               target: 'es2015'
             }
           },

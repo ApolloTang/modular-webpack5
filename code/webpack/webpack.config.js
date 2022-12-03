@@ -28,12 +28,12 @@ const commonConfig = merge([
         '~': ABS_PATH_TO_SRC
       },
       modules: [ABS_PATH_TO_SRC, 'node_modules'],
-      extensions: ['*', '.ts', '.js', '...'],
-      extensionAlias: {
-       '.js': ['.js', '.ts'],
-       '.cjs': ['.cjs', '.cts'],
-       '.mjs': ['.mjs', '.mts']
-      }
+      extensions: ['*', '.ts', '.js', '.tsx', '.jsx', '...'],
+      // extensionAlias: {
+      //  '.js': ['.js', '.ts'],
+      //  '.cjs': ['.cjs', '.cts'],
+      //  '.mjs': ['.mjs', '.mts']
+      // }
     },
   },
   part_page({title:'demo'}),

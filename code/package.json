@@ -17,6 +17,8 @@
   "author": "Apollo Tang",
   "license": "MIT",
   "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
     "autoprefixer": "^10.4.12",
     "browserlist": "^1.0.1",
     "core-js": "^3.25.5",
@@ -38,5 +40,9 @@
     "webpack-merge": "^5.8.0",
     "webpack-nano": "^1.1.1",
     "webpack-plugin-serve": "^1.6.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
