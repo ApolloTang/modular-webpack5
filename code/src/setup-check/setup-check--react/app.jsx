@@ -1,4 +1,4 @@
 import React from "react";
 
-const App = () => <h1>React component</h1>
+const App = () => <h2>React component</h2>
 export {App}
