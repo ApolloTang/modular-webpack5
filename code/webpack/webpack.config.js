@@ -23,6 +23,12 @@ const commonConfig = merge([
   {
     context: ABS_PATH_TO_SRC,
     entry: [ 'main' ],
+    output: {
+      //  must specified output.publicPath otherwise
+      //  devServer.historyApiFallback will not work
+      //  see: https://stackoverflow.com/a/53406903/3136861
+      publicPath: '/'
+    },
     resolve: {
       alias: {
         '~': ABS_PATH_TO_SRC
